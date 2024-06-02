@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ikhtiyaar</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/fav.ico">
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+<style>
+    .slider {
+        position: relative;
+        max-width: 1000px;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .slide img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        cursor: pointer;
+    }
+
+    .prev {
+        left: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+</style>
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <nav class="flex flex-wrap items-center justify-between p-3 bg-[#7cd279]">
+        <img src="assets/images/logo1.png" class="h-30 w-30" alt="ACME" width="120" />
+        <h1>IKHTIYAAR</h1>
+        <div class="flex md:hidden">
+            <button id="hamburger">
+              <img class="toggle block" src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png" width="40" height="40" />
+              <img class="toggle hidden" src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png" width="40" height="40" />
+            </button>
+        </div>
+        <div
+            class="toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-blue-900 md:border-none">
+            <a href="index.html"
+                class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Home
+            </a>
+            <a href="about_us.html"
+                class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">About Us
+            </a>
+            <a href="services.html"
+                class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Our Work
+            </a>
+            <a href="gallery.html"
+                class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Gallery
+            </a>
+            <a href="blog.html"
+                class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Features
+            </a>
+            <a href="contact_us.html"
+                class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Contact Us
+            </a>
+        </div>
+    </nav>
+    <script>
+        document.getElementById("hamburger").onclick = function toggleMenu() {
+            const navToggle = document.getElementsByClassName("toggle");
+            for (let i = 0; i < navToggle.length; i++) {
+              navToggle.item(i).classList.toggle("hidden");
+            }
+          };
+    </script>
+ 
+  <!--  ************************* Page Title Starts Here ************************** -->
+        
+    <div class="page-nav no-margin row">
+        <div class="container">
+            <div class="row">
+                <h2>Our Features</h2>
+                <ul>
+                    <li> <a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><i class="fas fa-angle-double-right"></i> Features</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+   
+<!-- ################# Our Blog Starts Here#######################--->
+    <div class="video-wrapper">
+        <video controls>
+            <source src="assets/images/feature/feature-1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <br>
+    <br>
+
+    <div id="portfolio" class="gallery">    
+           <div class="container">
+
+              <div class="row">
+
+
+
+        <br/>
+
+
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter hdpe">
+                <img src="assets/images/feature/feature-2.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter sprinkle">
+                <img src="assets/images/feature/feature-3.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter hdpe">
+                <img src="assets/images/feature/feature-4.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter irrigation">
+                <img src="assets/images/feature/feature-5.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter spray">
+                <img src="assets/images/feature/feature-6.jpg" class="img-responsive">
+            </div>
+
+
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter spray">
+                <img src="assets/images/feature/feature-7.jpg" class="img-responsive">
+            </div>
+
+            
+        </div>
+    </div>
+    
+             
+                
+  <!--  ************************* Footer Starts Here ************************** -->
+          
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <h2>About Us</h2>
+                    <p>
+                        We are here for spreading smiles, IKHTIYAAR stands for power and unity, and we can proudly say that we are privileged enough to educate and help the ones in need. We aim to educate kids from the orphanage or the ones who can't afford it, educate them about basic life knowledge even about the menstrual cycle, sex education, how to deal with failures and much more. We also accept donations that will help us to complete our drives which will include providing basic necessities to the underprivileged, help us reach our goal by supporting us and if you can then kindly contribute with any small amount possible, let's hope for a better future?
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h2>Useful Links</h2>
+                    <ul class="list-unstyled link-list">
+                        <li><a ui-sref="about" href="#/about">About us</a><i class="fa fa-angle-right"></i></li>
+                        <li><a ui-sref="portfolio" href="https://linktr.ee/ikhtiyaar">Portfolio</a><i class="fa fa-angle-right"></i></li>
+                        <li><a ui-sref="products" href="https://forms.gle/VDRdJLVKXBBTuvsV7">Become Volunteer</a><i class="fa fa-angle-right"></i></li>
+                        <li><a ui-sref="gallery" href="gallery.html">Gallery</a><i class="fa fa-angle-right"></i></li>
+                        <li><a ui-sref="contact" href="contact_us.html">Contact us</a><i class="fa fa-angle-right"></i></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12 map-img">
+                    <h2>Contact Us</h2>
+                    <address class="md-margin-bottom-40">
+                        IKHTIYAAR <br>
+                        VASHI, NAVI MUMBAI <br>
+                        MAHARASHTRA, IND <br>
+                        Phone: +91 70218 84774<br>
+                        Email: <a href="mailto:Ikhtiyaar.team@gmail.com" class="">Ikhtiyaar.team@gmail.com</a><br>
+                        Web: ikhtiyaar.com<a href="smart-eye.html" class="ikhtiyaar.com"></a>
+                    </address>
+
+                </div>
+            </div>
+            
+            
+            <div class="nav-box row clearfix">
+                <div class="inner col-md-9 clearfix">
+                    <ul class="footer-nav clearfix">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about_us.html"">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="services.html">Servies</a></li>
+                        <li><a href="blog.html">Features</a></li>
+                        <li><a href="contact_us.html"">Contact</a></li>
+                    </ul>
+
+                  
+                </div>
+                  <div class="donate-link col-md-3"><a href="donate.html" class="btn btn-primary "><span class="btn-title">Donate Now</span></a></div>
+            </div>
+            
+        </div>
+        
+
+    </footer>
+    <div class="copy">
+            <div class="container">
+                <a href="#">2024 &copy; All Rights Reserved | Designed and Developed by Saurabh Yadav</a>
+                
+                <span>
+                <a><i class="fab fa-github"></i></a>
+                <a><i class="fab fa-google-plus-g"></i></a>
+                <a><i class="fab fa-pinterest-p"></i></a>
+                <a><i class="fab fa-twitter"></i></a>
+                <a><i class="fab fa-facebook-f"></i></a>
+        </span>
+            </div>
+
+        </div>
+          
+    
+</body>
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+<script src="assets/plugins/slider/js/owl.carousel.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlides(n) {
+        slideIndex += n;
+        if (slideIndex >= slides.length) {
+            slideIndex = 0;
+        }
+        if (slideIndex < 0) {
+            slideIndex = slides.length - 1;
+        }
+        const offset = -slideIndex * 100;
+        document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+    }
+
+    function plusSlides(n) {
+        showSlides(n);
+    }
+
+    // Initial call to display the first slide
+    showSlides(0)
+</script>
+
+</html>
